@@ -4,16 +4,8 @@ import FocusColorElement from "./FocusColorElement";
 function FocusColor(){
 
  const [counter, setCounter]=useState(5);
- const [colorNames,setColorNames]=useState([]);
-
- // useEffect(()=>{
- //   let myInterval= setInterval(()=>{
- //   setCount(count-1);
- //   if(count<=0){
- //    clearInterval(myInterval);
- //   }
- //  },1000)
- // })
+ const [scoreCard, setScoreCard]=useState(0);
+ 
 
 
  useEffect(() => {
@@ -23,8 +15,12 @@ function FocusColor(){
   return (
     <div>
       <h1>1. Focus color </h1>
-      <p >Game Starts in: {counter} </p>
-      <FocusColorElement counter={counter} colorNames={colorNames} setColorNames={setColorNames} />
+      <p>Game Starts in: {counter} </p>
+      <FocusColorElement
+        counter={counter}
+        scoreCard={scoreCard}
+        setScoreCard={setScoreCard}
+      />
     </div>
   );
 }

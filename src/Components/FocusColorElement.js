@@ -1,12 +1,9 @@
 import React from "react";
 
-function shuffle(o) {
-    for(var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
-    return o;
-};
 
+  
 
-function FocusColorElement({counter,colorNames, setColorNames }){
+function FocusColorElement({ counter, scoreCard, setScoreCard }) {
   const colors = [
     "red",
     "blue",
@@ -22,33 +19,69 @@ function FocusColorElement({counter,colorNames, setColorNames }){
     "DeepSkyBlue",
     "Salmon",
   ];
-  
-  
-   if (counter == 0) {
-    setColorNames([...colorNames, {
-      text: shuffle(colors),
-      css: { color: shuffle(colors) },
-    }]);
-    console.log(colorNames);
-    //  var randomColorGenerator = colorNames[Math.floor(Math.random() * colorNames.length)];
-    //  var randomTextGenerator = colorNames[Math.floor(Math.random() * colorNames.length)];
-    //  var msg = new SpeechSynthesisUtterance();
-    //  var voices = window.speechSynthesis.getVoices();
-    //  msg.voice = voices[Math.floor(Math.random() * voices.length)]; // Note: some voices don't support altering params
-    //  msg.text = randomTextGenerator;
-    //  speechSynthesis.speak(msg);
-    //  const items = colorNames.map((i) => (
-    //      <button style={{ color: randomColorGenerator }}>
-    //        {randomTextGenerator}
-    //      </button>
-    //  ));
-   }
- return (
-  //  <button style={{ color: randomColorGenerator }}>
-  //    {randomTextGenerator}
-  //  </button>
-  <h1>Dummy</h1>
- );
+
+  function handleClick(e) {
+    if(e.target.innerText==questionColor){
+      setScoreCard(scoreCard+1);
+    }
+  }
+
+  if (counter == 0) {
+    var randomColorGenerator1 =
+      colors[Math.floor(Math.random() * colors.length)];
+    var randomTextGenerator1 =
+      colors[Math.floor(Math.random() * colors.length)];
+    var randomColorGenerator2 =
+      colors[Math.floor(Math.random() * colors.length)];
+    var randomTextGenerator2 =
+      colors[Math.floor(Math.random() * colors.length)];
+    var randomColorGenerator3 =
+      colors[Math.floor(Math.random() * colors.length)];
+    var randomTextGenerator3 =
+      colors[Math.floor(Math.random() * colors.length)];
+    var randomColorGenerator4 =
+      colors[Math.floor(Math.random() * colors.length)];
+    var randomTextGenerator4 =
+      colors[Math.floor(Math.random() * colors.length)];
+
+    var textGenerator = [
+      randomTextGenerator1,
+      randomTextGenerator2,
+      randomTextGenerator3,
+      randomTextGenerator4,
+    ];
+
+    var questionColor =
+      textGenerator[Math.floor(Math.random() * textGenerator.length)];
+
+      
+        var msg = new SpeechSynthesisUtterance();
+        var voices = window.speechSynthesis.getVoices();
+        msg.voice = voices[Math.floor(Math.random() * voices.length)];
+        msg.text = questionColor;
+        var AudioPlay=speechSynthesis.speak(msg);
+      
+
+  }
+  return (
+    <div>
+      {AudioPlay}
+      <button style={{ color: randomColorGenerator1 }} onClick={handleClick}>
+        {randomTextGenerator1}
+      </button>
+      <button style={{ color: randomColorGenerator2 }} onClick={handleClick}>
+        {randomTextGenerator2}
+      </button>
+      <button style={{ color: randomColorGenerator3 }} onClick={handleClick}>
+        {randomTextGenerator3}
+      </button>
+      <button style={{ color: randomColorGenerator4 }} onClick={handleClick}>
+        {randomTextGenerator4}
+      </button>
+      {scoreCard}
+    </div>
+  );
 }
+
 
 export default FocusColorElement;
