@@ -5,8 +5,6 @@ function FocusColor(){
 
  const [counter, setCounter]=useState(5);
  const [scoreCard, setScoreCard]=useState(0);
- 
-
 
  useEffect(() => {
    counter > 0 && setTimeout(() => setCounter(counter - 1), 1000);
@@ -15,12 +13,14 @@ function FocusColor(){
   return (
     <div>
       <h1>1. Focus color </h1>
-      <p>Game Starts in: {counter} </p>
-      <FocusColorElement
-        counter={counter}
-        scoreCard={scoreCard}
-        setScoreCard={setScoreCard}
-      />
+      {counter == 0 ? (
+        <FocusColorElement
+          scoreCard={scoreCard}
+          setScoreCard={setScoreCard}
+        />
+      ) : (
+        <p>Game Starts in: {counter} </p>
+      )}
     </div>
   );
 }
