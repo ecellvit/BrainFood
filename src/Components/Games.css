@@ -1,18 +1,26 @@
-.container{
- padding: 20px;
+.container {
+  padding: 20px;
+}
+
+.body {
+  min-height: 100%;
 }
 
 .row {
   display: flex;
-  flex-wrap: wrap;
   margin: auto;
   width: fit-content;
   align-items: center;
   flex-direction: row;
 }
-@media (max-width: 900px) {
+@media (max-width: 700px) {
   .row {
+    display: flex;
+    margin: auto;
+    width: fit-content;
+    align-items: center;
     flex-direction: column;
+    flex-wrap: wrap;
   }
 }
 
@@ -48,20 +56,23 @@
 }
 .my-foot-games {
   padding: 20px;
-  margin-top: 22px;
+  margin-top: 135px;
   width: 100%;
   color: white;
   text-align: center;
   background-color: black;
   font-family: sans-serif;
-  position: absolute;
   bottom: 0px;
+  /* clear: both;
+  position: relative;
+  height: 200px;
+  margin-top: -200px; */
 }
-.game-card{
- margin: 8px;
- padding: 16px;
- width: 400px;
- background-color: white;
- border-radius: 10px;
- text-align:justify;
+.game-card {
+  margin: 8px 12px 8px 12px;
+  padding: 16px;
+  width: 90%;
+  background-color: white;
+  border-radius: 10px;
+  text-align: justify;
 }

@@ -1,10 +1,10 @@
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import React from "react";
-import './Games.css';
+import "./Games.css";
 
 function Games() {
   return (
-    <div>
+    <div className="body">
       <div className="container">
         <h1>Activate your skills. Play small, quick and mind-boggling games</h1>
         <div className="row">
@@ -58,6 +58,5 @@ function Games() {
     </div>
   );
 }
-
 
 export default Games;

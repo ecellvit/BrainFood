@@ -1,30 +1,25 @@
-import React,{useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import FocusColorElement from "./FocusColorElement";
+import "./FocusColor.css";
 
-function FocusColor(){
+function FocusColor() {
+  const [counter, setCounter] = useState(5);
+  const [scoreCard, setScoreCard] = useState(0);
 
- const [counter, setCounter]=useState(5);
- const [scoreCard, setScoreCard]=useState(0);
-
- useEffect(() => {
-   counter > 0 && setTimeout(() => setCounter(counter - 1), 1000);
- }, [counter]);
+  useEffect(() => {
+    counter > 0 && setTimeout(() => setCounter(counter - 1), 1000);
+  }, [counter]);
 
   return (
     <div>
-      <h1>1. Focus color </h1>
+      <h1 className="title-fc"> FOCUS COLOR </h1>
       {counter == 0 ? (
-        <FocusColorElement
-          scoreCard={scoreCard}
-          setScoreCard={setScoreCard}
-        />
+        <FocusColorElement scoreCard={scoreCard} setScoreCard={setScoreCard} />
       ) : (
-        <p>Game Starts in: {counter} </p>
+        <p className="countdown-fc" >Game Starts in: {counter} </p>
       )}
     </div>
   );
 }
-
-
 
 export default FocusColor;

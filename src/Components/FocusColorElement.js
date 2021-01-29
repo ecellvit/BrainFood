@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-
+import "./FocusColor.css";
 function FocusColorElement({ scoreCard, setScoreCard }) {
   const [questionColor, setQuestionColor] = useState("");
 
-  const colors = ["red", "blue", "green", "orange", "Pink", "Purple", "Brown"];
+  const colors = ["Red", "Blue", "Green", "Orange", "Pink", "Purple", "Brown"];
   var randomColorGenerator1,
     randomTextGenerator1,
     randomColorGenerator2,
@@ -79,33 +79,48 @@ function FocusColorElement({ scoreCard, setScoreCard }) {
 
   return (
     <div>
-      {/* {arr_text}
-      {textGenerator}
-      {questionColor} */}
-      <button style={{ color: randomColorGenerator1 }} onClick={handleClick}>
-        {randomTextGenerator1}
-      </button>
-      <button style={{ color: randomColorGenerator2 }} onClick={handleClick}>
-        {randomTextGenerator2}
-      </button>
-      <button style={{ color: randomColorGenerator3 }} onClick={handleClick}>
-        {randomTextGenerator3}
-      </button>
-      <button style={{ color: randomColorGenerator4 }} onClick={handleClick}>
-        {randomTextGenerator4}
-      </button>
-      <button style={{ color: randomColorGenerator5 }} onClick={handleClick}>
-        {randomTextGenerator5}
-      </button>
-      <button style={{ color: randomColorGenerator6 }} onClick={handleClick}>
-        {randomTextGenerator6}
-      </button>
-      <button style={{ color: randomColorGenerator7 }} onClick={handleClick}>
-        {randomTextGenerator7}
-      </button>
-      <br/>
-      {scoreCard}
-      <br/>
+      <div className="button-fc">
+      <div className="play-fc">
+        <button className="play-now-fc" style={{ color: randomColorGenerator1 }} onClick={handleClick}>
+        <p className="play-now-text-fc">{randomTextGenerator1}</p>
+        </button>
+      </div>
+      <div className="play-fc">
+        <button className="play-now-fc" style={{ color: randomColorGenerator2 }} onClick={handleClick}>
+        <p className="play-now-text-fc">{randomTextGenerator2}</p>
+        </button>
+      </div>
+      <div className="play-fc">
+        <button className="play-now-fc" style={{ color: randomColorGenerator3 }} onClick={handleClick}>
+        <p className="play-now-text-fc">{randomTextGenerator3}</p>
+        </button>
+      </div>
+      <div className="play-fc">
+        <button className="play-now-fc" style={{ color: randomColorGenerator4 }} onClick={handleClick}>
+        <p className="play-now-text-fc">{randomTextGenerator4}</p>
+        </button>
+      </div>
+      <div className="play-fc">
+        <button className="play-now-fc" style={{ color: randomColorGenerator5 }} onClick={handleClick}>
+        <p className="play-now-text-fc">{randomTextGenerator5}</p>
+        </button>
+      </div>
+      <div className="play-fc">
+        <button className="play-now-fc" style={{ color: randomColorGenerator6 }} onClick={handleClick}>
+        <p className="play-now-text-fc">{randomTextGenerator6}</p>
+        </button>
+      </div>
+      <div className="play-fc">
+        <button className="play-now-fc" style={{ color: randomColorGenerator7 }} onClick={handleClick}>
+        <p className="play-now-text-fc">{randomTextGenerator7}</p>
+        </button>
+      </div>
+      </div>
+      <br />
+      <p className="score-fc">
+      Your score is: {scoreCard}
+      </p>
+      <br />
     </div>
   );
 }
