@@ -1,11 +1,10 @@
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 import "./Home.css";
 import { Link } from "react-router-dom";
-import aos from 'aos';
-import 'aos/dist/aos.css';
+import aos from "aos";
+import "aos/dist/aos.css";
 
 function Home() {
-
   useEffect(() => {
     aos.init();
   }, []);
@@ -27,13 +26,12 @@ function Home() {
           Our Vision
         </p>
         <p className="vision-para" data-aos="zoom-in-up">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          As an entrepreneur, one needs to stay continuously dilligent and active.
+          Hence, we have come up with a few games that would help any
+          entrepreneur or a businessman or anyone who wants to get an immediate
+          flow of mind, can quickly go through these short games to active their
+          thought process.<br/><br/> Recommended time: Morning / Before beginning any
+          mental work.
         </p>
       </div>
       <div className="play">

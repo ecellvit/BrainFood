@@ -100,8 +100,8 @@ html {
   text-align: center;
   border-radius: 20px;
 }
-.play-now :hover {
-  box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
+.play :hover {
+  background-color: rgb(69, 69, 69);
 }
 .play-now :active {
   color: white;
