@@ -1,0 +1,17 @@
+.anchor {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  text-decoration: none;
+  height: 100%;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+.anchor:active {
+  filter: brightness(150%);
+}
+.anchor:hover {
+  box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
+}

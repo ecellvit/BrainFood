@@ -1,0 +1,41 @@
+.play-fc {
+  margin: 15px;
+  width: fit-content;
+}
+.play-now-fc {
+  font-size: 1rem;
+  background-color: white;
+  color: white;
+  border-width: 2px;
+  border-color: grey;
+  padding: 10px;
+  outline: none;
+  text-align: center;
+  border-radius: 15px;
+}
+.play-now-text-fc {
+  font-size: 20px;
+  text-decoration: none;
+  margin: 8px;
+  font-weight: 900;
+}
+.button-fc {
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+.title-fc {
+  font-size: 75px;
+  text-align: center;
+}
+.countdown-fc {
+  text-align: center;
+}
+.score-fc {
+  font-size: 50px;
+  text-align: center;
+}
