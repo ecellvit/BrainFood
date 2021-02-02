@@ -13,8 +13,8 @@ function Home() {
     <div>
       <div class="bg-image">
         <div className="bg-text">
-          <p className="welcome-heading" data-aos="zoom-in-up">
-            Brain-Food
+          <p className="welcome-heading">
+            Brain Food
           </p>
           <p className="welcome-para">
             A place to improve entrepreneurial skills
@@ -28,10 +28,9 @@ function Home() {
         <p className="vision-para" data-aos="zoom-in-up">
           As an entrepreneur, one needs to stay continuously dilligent and active.
           Hence, we have come up with a few games that would help any
-          entrepreneur or a businessman or anyone who wants to get an immediate
-          flow of mind, can quickly go through these short games to active their
-          thought process.<br/><br/> Recommended time: Morning / Before beginning any
-          mental work.
+          entrepreneur or a businessman or any hustler who wants to get an immediate
+          flow of mind / break monotony. One can quickly go through these short games to activate their
+          grey matter and get started for the day.<br/><br/> Recommended time: Morning / Before beginning work / during break hours.
         </p>
       </div>
       <div className="play">

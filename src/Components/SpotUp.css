@@ -1,7 +1,58 @@
 .status {
   margin-bottom: 10px;
+  display: relative;
+  justify-content: center;
+}
+.board-row {
+  display: flex;
+  justify-content: center;
+}
+.to-press {
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
 }
 
+.title-su {
+  font-size: 75px;
+  text-align: center;
+}
+.play-su {
+  margin: 15px;
+  width: fit-content;
+  margin: auto;
+  padding: 30px;
+}
+.play-su :hover {
+  background-color: rgb(69, 69, 69);
+}
+
+.play-now-su {
+  font-size: 1rem;
+  background-color: black;
+  color: white;
+  border-width: 2px;
+  border-color: grey;
+  padding: 10px;
+  outline: none;
+  text-align: center;
+  border-radius: 15px;
+}
+.play-now-text-su {
+  font-size: 20px;
+  text-decoration: none;
+  margin: 8px;
+  font-weight: 900;
+}
+.button-su {
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
 .board-row:after {
   clear: both;
   content: "";
@@ -10,19 +61,27 @@
 
 .square {
   background: black;
-  color: rgb(195, 199, 201);
+  color: white;
   border: 1px solid #999;
   float: left;
   font-size: 24px;
   font-weight: bold;
   line-height: 34px;
-  height: 34px;
-  margin-right: -1px;
-  margin-top: -1px;
-  padding: 0;
+  margin: 3px;
+  height: 44px;
+  width: 44px;
+  cursor: pointer;
+  padding: 1px;
   text-align: center;
-  width: 34px;
+  border-radius: 4px;
+  box-shadow: 2px 4px #888888;
 }
-.square:focus {
+.square:hover {
+  /* border-color: white;
+  border-width: 2px; */
+  background-color: rgb(69, 69, 69);
+}
+.square:active{
+  box-shadow: 1px 2px #888888;
   outline: none;
 }

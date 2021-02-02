@@ -1,6 +1,7 @@
 html {
   scroll-behavior: smooth;
-  background-color: rgb(195, 199, 201);
+  /* background-color: rgb(195, 199, 201); */
+  background-color: #d0efff;
   font-family: sans-serif;
   cursor: crosshair;
 }
