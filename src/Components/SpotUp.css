@@ -1,3 +1,6 @@
+.container{
+  height: 100%;
+}
 .status {
   margin-bottom: 10px;
   display: relative;

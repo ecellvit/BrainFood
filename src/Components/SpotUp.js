@@ -46,18 +46,24 @@ function SpotUp() {
     let audio = new Audio("../clicksound.mp3");
     audio.play();
     if (e.target.innerText == countChecker) {
-      if (countChecker != 24) {
+      if (countChecker < 24) {
         setCountChecker(countChecker + 1);
-      } else setCountChecker("Bravo");
+      } else {
+        let vict = new Audio("../victory.mp3");
+        vict.play();
+        setCountChecker(countChecker + 1);
+      }
     } else {
       setCountChecker(0);
     }
   }
 
   return (
-    <div>
+    <div className="container">
       <h1 className="title-su">SPOT UP</h1>
-      <p className="to-press">Number to press: {countChecker}</p>
+      <p className="to-press">
+        {countChecker <= 24 ? <p>Find {countChecker}</p> : <p>Bravo!</p>}
+      </p>
       <div className="status">
         <div className="board-row">
           {a.map((ele) => {
