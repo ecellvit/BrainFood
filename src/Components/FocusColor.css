@@ -3,6 +3,7 @@
   width: fit-content;
 }
 .play-now-fc {
+  cursor: crosshair;
   font-size: 1rem;
   background-color: white;
   color: white;
@@ -34,6 +35,8 @@
 }
 .countdown-fc {
   text-align: center;
+  font-weight: 500;
+  font-size: 20px;
 }
 .score-fc {
   font-size: 50px;

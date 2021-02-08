@@ -1,7 +1,10 @@
 html {
   scroll-behavior: smooth;
-  background-color: rgb(195, 199, 201);
+  background: url("./images/img-welcome.jpg") no-repeat;
   font-family: sans-serif;
+  background-size: cover;
+  color: white;
+  min-height: 100vh;
   cursor: crosshair;
 }
 * {
@@ -40,7 +43,7 @@ html {
   animation: text1 2s 1;
 }
 @keyframes text1 {
-  0% {
+  10% {
   }
   30% {
     letter-spacing: 25px;
@@ -53,12 +56,15 @@ html {
   font-size: 1.5rem;
   letter-spacing: 8px;
   font-family: sans-serif;
-  animation: text2 2s 1;
+  animation: text2 2s linear;
   padding-bottom: 2.7rem;
 }
 @keyframes text2 {
   0% {
     font-size: 0px;
+  }
+  50% {
+    font-size: 1rem;
   }
   75% {
     font-size: 2rem;

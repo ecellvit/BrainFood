@@ -13,11 +13,12 @@
   align-items: center;
   flex-direction: row;
 }
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .row {
     display: flex;
     margin: auto;
     width: fit-content;
+    height: fit-content;
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
@@ -25,7 +26,7 @@
 }
 
 .play-1 {
-  margin: auto;
+  margin: auto auto 25px auto;
   width: fit-content;
 }
 .play-now-1 {
@@ -56,23 +57,22 @@
 }
 .my-foot-games {
   padding: 20px;
-  margin-top: 135px;
   width: 100%;
   color: white;
   text-align: center;
   background-color: black;
   font-family: sans-serif;
   bottom: 0px;
-  /* clear: both;
-  position: relative;
-  height: 200px;
-  margin-top: -200px; */
 }
 .game-card {
+  height: 535px;
   margin: 8px 12px 8px 12px;
-  padding: 16px;
+  padding: 20px;
   width: 90%;
-  background-color: white;
+  letter-spacing: 2px;
+
+  background-color: black;
   border-radius: 10px;
+  box-shadow: 8px 8px white;
   text-align: justify;
 }
