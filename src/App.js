@@ -1,21 +1,22 @@
 import React from "react";
-import Navbar from "./Components/Navbar";
-import Games from "./Components/Games";
-import About from "./Components/About";
-import Home from "./Components/Home";
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import FocusColor from "./Components/FocusColor";
-import SpotUp from "./Components/SpotUp";
+import Games from "./Components/Games Page/Games";
+import Error from "./Components/Error/Error";
+import Home from "./Components/Home/Home";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import FocusColor from "./Components/FocusColor/FocusColor";
+import SpotUp from "./Components/Spot Up/SpotUp";
 
 function App() {
   return (
     <Router>
-      <Navbar />
-      <Route path="/" exact component={Home} />
-      <Route path="/about" component={About} />
-      <Route path="/games" component={Games} />
-      <Route path="/focuscolor" exact component={FocusColor} />
-      <Route path="/spotup" exact component={SpotUp} />
+      
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/games" exact component={Games} />
+        <Route path="/focuscolor" exact component={FocusColor} />
+        <Route path="/spotup" exact component={SpotUp} />
+        <Route path="/*" component={Error} />
+      </Switch>
     </Router>
   );
 }

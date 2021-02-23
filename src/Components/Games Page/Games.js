@@ -1,21 +1,27 @@
 import { Link } from "react-router-dom";
-import React from "react";
+import React, { useState } from "react";
 import "./Games.css";
+
 
 function Games() {
   return (
     <div className="body">
       <div className="container">
-        <h1>Activate your skills. Play small, quick and mind-boggling games</h1>
+        <span className="top-bar">
+          <Link to="/" className="back-button">
+            <h1>Brain Food </h1>
+          </Link>
+          <h1>&nbsp;/&nbsp;GAMES</h1>
+        </span>
+        <h2>Activate your skills. Play small, quick and mind-boggling games</h2>
         <div className="row">
           <div className="game-card column">
-            <h2>SPOT UP</h2>
+            <h3>SPOT UP</h3>
             <b>
               This brain teaser challenges your mental vitality and flexibility
               to adapt to changes.
             </b>
             <br />
-
             <b>Rules</b>
             <p>
               1. There will be a grid of numbers which reshuffle after every
@@ -28,17 +34,16 @@ function Games() {
             </p>
             <p>4. For every wrong click, you commence from zero.</p>
             <p>5. You win the game when you reach the last number, 24.</p>
-
             <div className="play-1">
               <button className="play-now-1">
-                <Link to="/spotup">
+                <Link to="/SpotUp">
                   <p className="play-now-text-1">Play</p>
                 </Link>
               </button>
             </div>
           </div>
           <div className="game-card column">
-            <h2>FOCUS COLOR</h2>
+            <h3>FOCUS COLOR</h3>
             <b>Sharpen your brain cells and test your wit!</b>
             <br />
             <br />
@@ -62,7 +67,8 @@ function Games() {
           </div>
         </div>
       </div>
-      <div className="my-foot-games">
+      <div className="my-foot">
+        <p> &#169;BrainFood</p>
         <p>Made by Divit Agrawal</p>
       </div>
     </div>
