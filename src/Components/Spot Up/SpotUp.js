@@ -164,7 +164,6 @@ function SpotUp() {
       ) : (
         <p className="to-press">GAME OVER!</p>
       )}
-      {/* <span>{timer == 0 ? <p>GAME OVER! </p> : <p></p>}</span> */}
       <div className="play-su">
         <button className="play-now-su" onClick={refreshPage}>
           <p className="play-now-text-su">Play Again</p>
