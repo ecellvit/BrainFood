@@ -30,7 +30,7 @@ function Games() {
             <p>2. Numbers in the grid appear randomly from 0 to 24.</p>
             <p>
               3. A number appears separately, you find and click that number in
-              the grid.
+              the grid within 5 seconds.
             </p>
             <p>4. For every wrong click, you commence from zero.</p>
             <p>5. You win the game when you reach the last number, 24.</p>

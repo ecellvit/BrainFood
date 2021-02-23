@@ -54,7 +54,7 @@ function SpotUp() {
   };
 
   function refreshPage() {
-    window.location.reload(false);
+    window.location.reload();
   }
 
   const [a, seta] = useState([0, 0, 0, 0, 0]);
