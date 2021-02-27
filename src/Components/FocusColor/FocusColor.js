@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import FocusColorElement from "./FocusColorElement";
 import "./FocusColor.css";
 
 function FocusColor() {
   const [counter, setCounter] = useState(5);
   const [scoreCard, setScoreCard] = useState(0);
+  // const [countdown,setCountDown] = useState(15);
 
   useEffect(() => {
     counter > 0 && setTimeout(() => setCounter(counter - 1), 1000);
@@ -12,11 +14,16 @@ function FocusColor() {
 
   return (
     <div>
-      <h1 className="title-fc"> FOCUS COLOR </h1>
+      <span className="top-bar">
+        <Link to="/games" className="back-button">
+          <h1>GAMES</h1>
+        </Link>
+        <h1>&nbsp;/&nbsp;FOCUS COLOR</h1>
+      </span>
       {counter == 0 ? (
         <FocusColorElement scoreCard={scoreCard} setScoreCard={setScoreCard} />
       ) : (
-        <p className="countdown-fc" >Game Starts in: {counter} </p>
+        <p className="countdown-fc">Game Starts in: {counter} </p>
       )}
     </div>
   );

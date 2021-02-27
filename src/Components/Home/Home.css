@@ -1,6 +1,6 @@
 html {
   scroll-behavior: smooth;
-  background: url("./images/img-welcome.jpg") no-repeat;
+  background: url("../images/img-welcome.jpg") no-repeat;
   font-family: sans-serif;
   background-size: cover;
   color: white;
@@ -12,7 +12,6 @@ html {
 }
 
 .bg-image {
-  background: url("./images/img-welcome.jpg");
   background-attachment: fixed;
   height: 48rem;
   background-position: center;
@@ -28,7 +27,7 @@ html {
   border: 3px solid #f1f1f1;
   border-radius: 10px;
   position: absolute;
-  top: 60%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
@@ -38,7 +37,7 @@ html {
 }
 .welcome-heading {
   font-size: 5rem;
-  letter-spacing: 8px;
+  letter-spacing: 4px;
   font-family: sans-serif;
   animation: text1 2s 1;
 }
@@ -49,12 +48,12 @@ html {
     letter-spacing: 25px;
   }
   75% {
-    letter-spacing: 8px;
+    letter-spacing: 6px;
   }
 }
 .welcome-para {
   font-size: 1.5rem;
-  letter-spacing: 8px;
+  letter-spacing: 4px;
   font-family: sans-serif;
   animation: text2 2s linear;
   padding-bottom: 2.7rem;
@@ -74,6 +73,7 @@ html {
 .vision {
   background-color: black;
   height: auto;
+  margin-top: 3px;
 }
 .vision-heading {
   font-size: 3rem;
@@ -86,34 +86,29 @@ html {
   font-size: 1.5rem;
   color: white;
   text-align: center;
-  margin-top: 0%;
-  letter-spacing: 4px;
+  margin-top: 0px;
+  letter-spacing: 2px;
   padding: 0% 5% 2.5rem 5%;
+  margin-bottom: 2px;
 }
-.play {
+.play-games {
   margin: auto;
-  width: fit-content;
-}
-.play-now {
   font-size: 2rem;
-  width: fit-content;
-  background-color: black;
+    background-color: black;
   color: white;
-  border-width: 2px;
-  border-color: grey;
   padding: 14px;
   outline: none;
   text-align: center;
-  border-radius: 20px;
 }
-.play :hover {
-  background-color: rgb(69, 69, 69);
+
+.play-games :hover {
+  text-shadow: 2px 2px grey;
 }
-.play-now :active {
+.play-games :active {
   color: white;
   text-decoration: none;
 }
-.play-now :not(:active) {
+.play-games :not(:active) {
   text-decoration: none;
   color: white;
 }
@@ -122,10 +117,12 @@ html {
   margin: 0px;
 }
 .my-foot {
-  padding: 20px;
-  margin-top: 22px;
+  padding: 8px;
   color: white;
   text-align: center;
   background-color: black;
   font-family: sans-serif;
+  display: row;
+  font-size: small;
 }
+

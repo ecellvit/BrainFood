@@ -19,6 +19,8 @@
   text-decoration: none;
   margin: 8px;
   font-weight: 900;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 .button-fc {
   width: 75%;
