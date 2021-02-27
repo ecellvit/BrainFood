@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import React, { useState } from "react";
+import React from "react";
 import "./Games.css";
 
 
@@ -69,7 +69,7 @@ function Games() {
       </div>
       <div className="my-foot">
         <p> &#169;BrainFood</p>
-        <p>Made by Divit Agrawal</p>
+        <p>Created by Divit Agrawal</p>
       </div>
     </div>
   );

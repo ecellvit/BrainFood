@@ -27,10 +27,10 @@ function Home() {
           Our Vision
         </p>
         <p className="vision-para" data-aos="zoom-in-up">
-          As an entrepreneur, one needs to stay continuously dilligent and
+          Entrepreneurship is a mindset. As an entrepreneur, one needs to stay continuously dilligent and
           active. Hence, we have come up with a few games that would help any
-          entrepreneur or a businessman or any hustler who wants to get an
-          immediate flow of mind / break monotony. One can quickly go through
+          entrepreneur, businessman or any hustler who wants to get an
+          immediate flow of mind and break monotony. One can quickly go through
           these short games to activate their grey matter and get started for
           the day.
           <br />
@@ -40,7 +40,7 @@ function Home() {
       </div>
       <div className="my-foot">
         <p> &#169;BrainFood</p>
-        <p>Made by Divit Agrawal</p>
+        <p>Created by Divit Agrawal</p>
       </div>
     </div>
   );

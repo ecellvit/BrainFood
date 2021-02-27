@@ -6,6 +6,7 @@ import "./FocusColor.css";
 function FocusColor() {
   const [counter, setCounter] = useState(5);
   const [scoreCard, setScoreCard] = useState(0);
+  // const [countdown,setCountDown] = useState(15);
 
   useEffect(() => {
     counter > 0 && setTimeout(() => setCounter(counter - 1), 1000);
